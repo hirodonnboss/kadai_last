@@ -63,6 +63,9 @@ public class Report {
     @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
 
+    @Column(name = "yoineCount",nullable = false)
+    private Integer yoineCount=0;
+
     public Integer getId() {
         return id;
     }
@@ -118,4 +121,14 @@ public class Report {
     public void setUpdated_at(Timestamp updated_at) {
         this.updated_at = updated_at;
     }
+
+
+   public void setYoineCount(int yoineCount) {
+        this.yoineCount=yoineCount;
+   }
+
+   public int getYoineCount(){
+       return yoineCount;
+
+   }
 }
